@@ -32,17 +32,8 @@ signal EoCTim : std_logic;
 signal countaddr : unsigned(3 downto 0);
 signal addr : integer range 0 to 15;
 signal data_o : signed(7 downto 0);
-signal per_d : std_logic_vector(1 downto 0);
-signal per_changed : std_logic ;
 
 begin
-    process(clk)--PerChanged
-        begin
-          if rising_edge(clk) then
-            per_d <= per;
-          end if;
-    end process;
-    per_changed <= '1' when per /= per_d else '0';
 	process(per) --MUX process
 		begin
 		case per is
@@ -55,10 +46,10 @@ begin
 	end process;
 	process(clk,rst) --Timer
 		begin
-			if rst = '1' or per_changed = '1' then
+			if rst = '1' then
 				cnt_timer <= (others => '0');
 			elsif rising_edge(clk) then 
-				if cnt_timer = maxcount then 
+				if cnt_timer >= maxcount then 
 					cnt_timer <= (others => '0');
 				else
 					cnt_timer <= cnt_timer + 1; 

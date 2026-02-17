@@ -37,7 +37,7 @@ DUT : GenSen port map (clk => clk,rst => rst,per => per, led => led, dac => dac)
 	process 
 		begin
 		rst <= '1';
-		wait for 100 ns;
+		wait for 1 ms;
 		rst <= '0';
 		
 		per <= "00";
