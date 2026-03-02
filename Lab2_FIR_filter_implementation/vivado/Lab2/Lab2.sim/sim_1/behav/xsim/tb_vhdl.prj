@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../src/FIR.vhdl" \
+"../../../../../../src/GenSen.vhdl" \
+"../../../../../../src/TopLevelEntity.vhdl" \
+"../../../../../../src/rom_sin.vhd" \
+"../../../../../../tb/TestBench.vhdl" \
+
+# Do not sort compile order
+nosort
