@@ -148,6 +148,15 @@ begin
 end process;
 
 
-DataOut <= resize(shift_right(sum,8),8);
+process(clk,rst)
+begin
+    if rst='1' then
+        DataOut <= (others=>'0');
+    elsif rising_edge(clk) then
+        if enable='1' then
+            DataOut <= resize(shift_right(sum,8),8);
+        end if;
+    end if;
+
 
 end filtering;

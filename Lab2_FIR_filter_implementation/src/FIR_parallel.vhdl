@@ -113,5 +113,13 @@ s9 <= s8 + resize(m9,17);
 s10 <= s9 + resize(m10,17);
 sum <= s10 + resize(m11,17);
 
-DataOut <= resize(shift_right(sum, 8), 8);
+process(clk,rst)
+begin
+    if rst='1' then
+        DataOut <= (others=>'0');
+    elsif rising_edge(clk) then
+        if enable='1' then
+            DataOut <= resize(shift_right(sum,8),8);
+        end if;
+    end if;
 end architecture;
