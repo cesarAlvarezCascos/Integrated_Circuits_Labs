@@ -1,6 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../../src/FIR_pipeline.vhdl" \
+"../../../../../../src/FIR.vhdl" \
 "../../../../../../src/GenSen.vhdl" \
 "../../../../../../src/TopLevelEntity.vhdl" \
 "../../../../../../src/rom_sin.vhd" \

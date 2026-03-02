@@ -14,7 +14,7 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.rom_sin [rom_sin_default]
 Compiling architecture behavioral2 of entity xil_defaultlib.GenSen [gensen_default]
-Compiling architecture filtering of entity xil_defaultlib.FIR_pipeline [fir_pipeline_default]
+Compiling architecture filtering of entity xil_defaultlib.FIR [fir_default]
 Compiling architecture toplevel of entity xil_defaultlib.TOP [top_default]
 Compiling architecture prueba1 of entity xil_defaultlib.tb
 Built simulation snapshot tb_behav
