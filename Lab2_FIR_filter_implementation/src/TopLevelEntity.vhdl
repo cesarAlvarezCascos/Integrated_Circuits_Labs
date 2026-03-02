@@ -25,21 +25,15 @@ port(
 );
 end component;
 
-component FIR is 
-	generic(
-		a0 : integer := -8;
-		a1 : integer := -14;
-		a2 : integer := -1;
-		a3 : integer := 20;
-		a4 : integer := 52;
-		a5 : integer := 73;
-		a6 : integer := 73;
-		a7 : integer := 52;
-		a8 : integer := 20;
-		a9 : integer := -1;
-		a10 : integer := -14;
-		a11 : integer := -8
-	);
+component FIR_pipeline is 
+    generic(
+        a0 : integer := -8;
+        a1 : integer := -14;
+        a2 : integer := -1;
+        a3 : integer := 20;
+        a4 : integer := 52;
+        a5 : integer := 73
+    );
 	port(
 		clk,rst,enable : in std_logic;
 		DataIn: in signed (7 downto 0);
@@ -84,7 +78,7 @@ end process;
 enable10k <= '1' when cnt_10k=9999 else '0';
 
 
-FIR1 : FIR
+FIR1 : FIR_pipeline
 port map(
  clk => clk,
  rst => rst,

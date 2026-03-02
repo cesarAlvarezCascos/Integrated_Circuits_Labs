@@ -65,7 +65,14 @@ wait for 2 ms;
 
 
 per <= "00";
-wait for 12 ms;
+wait for 4 ms;
+
+per <= "01";
+wait for 2 ms;
+
+per <= "00";
+wait for 4 ms;
+
 
 wait;
 
