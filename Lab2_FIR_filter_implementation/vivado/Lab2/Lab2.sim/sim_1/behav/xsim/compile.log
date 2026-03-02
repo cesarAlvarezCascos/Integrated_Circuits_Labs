@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/CIM/Integrated_Circuits_Labs/Lab2_FIR_filter_implementation/src/FIR.vhdl" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FIR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/CIM/Integrated_Circuits_Labs/Lab2_FIR_filter_implementation/src/FIR_pipeline.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_pipeline'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/CIM/Integrated_Circuits_Labs/Lab2_FIR_filter_implementation/src/TopLevelEntity.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'TOP'

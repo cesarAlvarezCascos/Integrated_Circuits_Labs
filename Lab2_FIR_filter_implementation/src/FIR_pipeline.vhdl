@@ -157,6 +157,6 @@ begin
             DataOut <= resize(shift_right(sum,8),8);
         end if;
     end if;
-
+end process;
 
 end filtering;

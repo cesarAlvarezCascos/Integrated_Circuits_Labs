@@ -25,7 +25,7 @@ port(
 );
 end component;
 
-component FIR is 
+component FIR_pipeline is 
 	 generic(
         a0 : integer := -8;
         a1 : integer := -14;
