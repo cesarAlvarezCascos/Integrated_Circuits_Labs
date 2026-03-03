@@ -51,31 +51,23 @@ rst <= '1';
 wait for 100 ns;
 rst <= '0';
 
+per <= "00";
+wait for 4 ms;
+
+per <= "01";
+wait for 2 ms;
+
+
+per <= "10";
+wait for 0.91 ms;
 
 per <= "11";
 wait for 0.5 ms;
 
 
-per <= "10";
-wait for 1 ms;
-
-per <= "01";
-wait for 2 ms;
-
-
-
-per <= "00";
-wait for 4 ms;
-
-per <= "01";
-wait for 2 ms;
-
-per <= "00";
-wait for 4 ms;
 
 
 wait;
-
 end process;
 
 end Prueba1;
